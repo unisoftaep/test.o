@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #66fcf1;
+    background: linear-gradient(to bottom, #0b0c10, #1f2833);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.ama-form {
+    background-color: #1f2833;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(102, 252, 241, 0.5);
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Horizontally center the input container */
+    margin-bottom: 20px;
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(11, 12, 16, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.input-container label {
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0b0c10;
+    color: #66fcf1;
+}
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+textarea:invalid {
+    background-color: #1f2833;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #45a29e;
+    color: #0b0c10;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #66fcf1;
+}
+
+/* Styles for the top banner */
+.banner {
+    background-color: #0b0c10;
+    color: #66fcf1;
+    text-align: center;
+    padding: 40px 0; /* Adjusted banner padding */
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.banner h2 {
+    font-size: 36px; /* Adjusted banner h2 font size */
+    margin: 0;
+}
+
+.banner p {
+    font-size: 18px; /* Adjusted banner p font size */
+    margin: 10px 0;
+}
+
+/* Parallax background */
+.parallax-bg {
+    background-image: url('BG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Blur background on scroll */
+.blur-bg {
+    filter: blur(5px);
+}
